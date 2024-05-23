@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Orele</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240523025544">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.webp">
+	<link rel="icon" type="image.webp" sizes="32x32" href="/favicon-32x32.webp">
+	<link rel="icon" type="image.webp" sizes="16x16" href="/favicon-16x16.webp">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#ffffff">
+
+	<script type="text/javascript" data-pagespeed-no-defer>
+		(function() {
+			function f(a, b, d) {
+				if (a.addEventListener) a.addEventListener(b, d, !1);
+				else if (a.attachEvent) a.attachEvent("on" + b, d);
+				else {
+					var c = a["on" + b];
+					a["on" + b] = function() {
+						d.call(this);
+						c && c.call(this)
+					}
+				}
+			};
+			window.pagespeed = window.pagespeed || {};
+			var g = window.pagespeed;
+
+			function k(a) {
+				this.g = [];
+				this.f = 0;
+				this.h = !1;
+				this.j = a;
+				this.i = null;
+				this.l = 0;
+				this.b = !1;
+				this.a = 0
+			}
+
+			function l(a, b) {
+				var d = b.getAttribute("data-pagespeed-lazy-position");
+				if (d) return parseInt(d, 0);
+				var d = b.offsetTop,
+					c = b.offsetParent;
+				c && (d += l(a, c));
+				d = Math.max(d, 0);
+				b.setAttribute("data-pagespeed-lazy-position", d);
+				return d
+			}
+
+			function m(a, b) {
+				var d, c, e;
+				if (!a.b && (0 == b.offsetHeight || 0 == b.offsetWidth)) return !1;
+				a: if (b.currentStyle) c = b.currentStyle.position;
+					else {
+						if (document.defaultView && document.defaultView.getComputedStyle && (c = document.defaultView.getComputedStyle(b, null))) {
+							c = c.getPropertyValue("position");
+							break a
+						}
+						c = b.style && b.style.position ? b.style.position : ""
+					}
+				if ("relative" == c) return !0;
+				e = 0;
+				"number" == typeof window.pageYOffset ? e = window.pageYOffset : document.body && document.body.scrollTop ? e = document.body.scrollTop : document.documentElement &&
+					document.documentElement.scrollTop && (e = document.documentElement.scrollTop);
+				d = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+				c = e;
+				e += d;
+				var h = b.getBoundingClientRect();
+				h ? (e = h.top - d, c = h.bottom) : (h = l(a, b), d = h + b.offsetHeight, e = h - e, c = d - c);
+				return e <= a.f && 0 <= c + a.f
+			}
+			k.prototype.m = function(a) {
+				p(a);
+				var b = this;
+				window.setTimeout(function() {
+					var d = a.getAttribute("data-pagespeed-lazy-src");
+					if (d)
+						if ((b.h || m(b, a)) && -1 != a.src.indexOf(b.j)) {
+							var c = a.parentNode,
+								e = a.nextSibling;
+							c && c.removeChild(a);
+							a.c && (a.getAttribute = a.c);
+							a.removeAttribute("onload");
+							a.tagName && "IMG" == a.tagName && g.CriticalImages && f(a, "load", function() {
+								g.CriticalImages.checkImageForCriticality(this);
+								b.b && (b.a--, b.a || g.CriticalImages.checkCriticalImages())
+							});
+							a.removeAttribute("data-pagespeed-lazy-src");
+							a.removeAttribute("data-pagespeed-lazy-replaced-functions");
+							c && c.insertBefore(a, e);
+							if (c = a.getAttribute("data-pagespeed-lazy-srcset")) a.srcset = c, a.removeAttribute("data-pagespeed-lazy-srcset");
+							a.src = d
+						} else b.g.push(a)
+				}, 0)
+			};
+			k.prototype.loadIfVisibleAndMaybeBeacon = k.prototype.m;
+			k.prototype.s = function() {
+				this.h = !0;
+				q(this)
+			};
+			k.prototype.loadAllImages = k.prototype.s;
+
+			function q(a) {
+				var b = a.g,
+					d = b.length;
+				a.g = [];
+				for (var c = 0; c < d; ++c) a.m(b[c])
+			}
+
+			function t(a, b) {
+				return a.a ? null != a.a(b) : null != a.getAttribute(b)
+			}
+			k.prototype.u = function() {
+				for (var a = document.getElementsByTagName("img"), b = 0, d; d = a[b]; b++) t(d, "data-pagespeed-lazy-src") && p(d)
+			};
+			k.prototype.overrideAttributeFunctions = k.prototype.u;
+
+			function p(a) {
+				t(a, "data-pagespeed-lazy-replaced-functions") || (a.c = a.getAttribute, a.getAttribute = function(a) {
+					"src" == a.toLowerCase() && t(this, "data-pagespeed-lazy-src") && (a = "data-pagespeed-lazy-src");
+					return this.c(a)
+				}, a.setAttribute("data-pagespeed-lazy-replaced-functions", "1"))
+			}
+			g.o = function(a, b) {
+				function d() {
+					if (!(c.b && a || c.i)) {
+						var b = 200;
+						200 < (new Date).getTime() - c.l && (b = 0);
+						c.i = window.setTimeout(function() {
+							c.l = (new Date).getTime();
+							q(c);
+							c.i = null
+						}, b)
+					}
+				}
+				var c = new k(b);
+				g.lazyLoadImages = c;
+				f(window, "load", function() {
+					c.b = !0;
+					c.h = a;
+					c.f = 200;
+					if (g.CriticalImages) {
+						for (var b = 0, d = document.getElementsByTagName("img"), r = 0, n; n = d[r]; r++) - 1 != n.src.indexOf(c.j) && t(n, "data-pagespeed-lazy-src") && b++;
+						c.a = b;
+						c.a || g.CriticalImages.checkCriticalImages()
+					}
+					q(c)
+				});
+				b.indexOf("data") && ((new Image).src = b);
+				f(window,
+					"scroll", d);
+				f(window, "resize", d)
+			};
+			g.lazyLoadInit = g.o;
+		})();
+
+		pagespeed.lazyLoadInit(true, "/pagespeed_static/1.JiBnMqyl6S.webp");
+	</script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header--hero">
+			<div class="header__container">
+				<div class="header__body">
+
+					<div class="header__menu menu">
+
+						<nav class="menu__body">
+
+							<ul class="menu__list">
+
+								<li class="menu__item"><a href="index.html" class="menu__link nav-link">Главная</a></li>
+
+								<li class="menu__item"><a href="catalog.html" class="menu__link nav-link">Каталог</a></li>
+
+								<li class="menu__item"><a href="about-us.html" class="menu__link nav-link">О нас</a></li>
+
+								<li class="menu__item"><a href="blog.html" class="menu__link nav-link">Блог</a></li>
+
+								<li class="menu__item"><a href="contacts.html" class="menu__link nav-link">Контакты</a></li>
+
+							</ul>
+
+							<button type="button" class="menu__icon icon-menu icon-menu--close"><span></span></button>
+
+						</nav>
+
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+
+					</div>
+
+					<a href="index.html" class="header__logo">
+						<svg width="42" height="39" viewBox="0 0 42 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1346_1923)">
+								<mask id="mask0_1346_1923" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="42" height="39">
+									<path d="M41.3984 0H0.398438V39H41.3984V0Z" fill="white" />
+								</mask>
+								<g mask="url(#mask0_1346_1923)">
+									<path d="M13.2616 20.0631C13.3097 20.3102 13.4193 20.5431 13.588 20.7434C13.8058 21.002 14.0764 21.153 14.3071 21.2443C14.7512 21.4199 15.2891 21.4679 15.8195 21.4679C17.2539 21.4679 18.8705 21.1667 20.6523 20.603L20.6695 20.5976L20.6836 20.5925L20.6867 20.5914C22.5115 19.9541 24.1356 19.2306 25.5515 18.4159L25.5642 18.4086L25.568 18.4062L25.5694 18.4054L25.5795 18.3992C27.8283 17.0167 29.5836 15.3987 30.794 13.5269C32.0311 11.6309 32.7177 9.75613 32.7177 7.92443C32.7177 5.98309 31.9724 4.3287 30.5204 3.03574C29.008 1.60909 26.8169 1 24.1682 1C21.4706 1 18.7673 1.66733 16.0678 2.96895L16.0523 2.97643L16.047 2.97921C13.4168 4.28015 10.9946 6.10022 8.7784 8.42304C6.53934 10.6921 4.75355 13.3608 3.41847 16.4186C2.06883 19.51 1.39844 22.8374 1.39844 26.3882C1.39844 29.7736 2.3503 32.5398 4.40274 34.5105L4.40841 34.516L4.41417 34.5213L4.41594 34.523L4.42862 34.5348L4.43573 34.5409L4.43969 34.5444C6.49901 36.3673 9.03267 37.2608 11.9662 37.2608H11.9689H11.9805L11.992 37.2605C15.5841 37.1778 18.9969 36.0589 22.2141 33.9413L22.2301 33.9308L22.2344 33.9277C25.426 31.7875 28.3929 29.2164 31.1359 26.2185C33.8897 23.275 36.432 20.4452 38.7622 17.7292C39.3159 17.1345 39.5984 16.4014 39.5984 15.5886C39.5984 15.3423 39.5749 14.997 39.4219 14.6741C39.3387 14.4987 39.1988 14.2911 38.9678 14.129C38.7279 13.9606 38.4588 13.8898 38.205 13.8898C37.6927 13.8898 37.3133 14.1811 37.1398 14.3275C36.9236 14.5099 36.7133 14.7449 36.5121 14.9986C35.4327 16.2881 33.9854 17.8916 32.1641 19.8125C30.3529 21.723 28.3887 23.6359 26.2707 25.5511C24.1736 27.3706 22.1156 28.9176 20.0968 30.1962C18.1128 31.376 16.4844 31.889 15.1773 31.889C13.9877 31.889 13.1908 31.4663 12.6251 30.6502C12.0355 29.7088 11.7083 28.5015 11.7083 26.9688C11.7083 24.8011 12.2146 22.5021 13.2616 20.0631ZM13.2616 20.0631C13.2616 19.2883 13.7425 18.7061 13.9829 18.5119M13.9829 18.5119C15.0672 16.3299 16.3656 14.3147 17.878 12.4642C19.7239 10.2031 21.4578 8.64979 23.0686 7.73575L23.0701 7.73494C24.1941 7.09467 25.1018 6.8363 25.8196 6.8363C26.6234 6.8363 27.0783 7.06545 27.365 7.38531L27.3882 7.41212L27.4137 7.43729C27.8009 7.83143 28.0041 8.3153 28.0041 8.96955C28.0041 9.70708 27.7327 10.6309 27.0594 11.7671C26.4397 12.813 25.3315 13.9381 23.6404 15.1218C22.128 16.0769 20.5617 16.8471 18.9412 17.4345C17.3101 17.9689 16.2376 18.1864 15.636 18.1864C15.172 18.1864 14.6934 18.2241 14.2928 18.369M13.9829 18.5119L14.2928 18.369M13.9829 18.5119C14.0911 18.4494 14.1981 18.4033 14.2928 18.369" stroke="#4E4E4E" stroke-width="1.5" />
+									<path d="M11.9662 36.2608H11.9676H11.9689C15.3571 36.1828 18.5894 35.1299 21.6643 33.106L21.6651 33.1054C24.7926 31.0097 27.7048 28.4876 30.4019 25.5394C33.1542 22.5975 35.6928 19.7715 38.0176 17.0613C38.4044 16.6523 38.5984 16.1593 38.5984 15.5886C38.5984 15.3895 38.5755 15.2232 38.5182 15.1025C38.4889 15.0407 38.4485 14.9863 38.3934 14.9476C38.3372 14.9081 38.2729 14.8898 38.205 14.8898C38.0688 14.8898 37.9261 14.9726 37.7847 15.0918C37.6387 15.215 37.4729 15.3957 37.2875 15.6301C36.1889 16.9433 34.7233 18.5668 32.8897 20.5006C31.0574 22.4334 29.0722 24.3663 26.9339 26.2997C24.7978 28.1535 22.6932 29.7364 20.6201 31.0485C18.5506 32.2809 16.7376 32.889 15.1773 32.889C13.6841 32.889 12.5608 32.325 11.7898 31.2004C11.0711 30.0625 10.7083 28.6541 10.7083 26.9688C10.7083 24.5113 11.315 21.9344 12.5327 19.2371C13.7519 16.5366 15.2755 14.0683 17.1037 11.8313C18.9945 9.51534 20.8187 7.86266 22.5751 6.86601C23.7879 6.17523 24.8685 5.8363 25.8196 5.8363C26.8348 5.8363 27.594 6.1377 28.1166 6.7256L28.1186 6.72793L28.1209 6.73014C28.709 7.32574 29.0041 8.06934 29.0041 8.96955C29.0041 9.94752 28.6473 11.049 27.9198 12.2769C27.1979 13.4951 25.9595 14.7218 24.1944 15.9546C22.6125 16.9556 20.97 17.764 19.2672 18.38C17.6179 18.9211 16.4106 19.1864 15.636 19.1864C15.204 19.1864 14.8662 19.2249 14.6325 19.3096C14.515 19.352 14.4157 19.4089 14.345 19.4857C14.2718 19.5652 14.2334 19.6613 14.2334 19.7691C14.2334 19.8931 14.2735 20.005 14.3529 20.0993C14.4306 20.1915 14.5412 20.2615 14.6751 20.3145C14.9408 20.4196 15.3259 20.4679 15.8195 20.4679C17.1198 20.4679 18.6307 20.1938 20.3506 19.6496L20.3523 19.649L20.3539 19.6484C22.1332 19.0271 23.6998 18.3276 25.0528 17.5491L25.0544 17.5482L25.0558 17.5473C27.2079 16.2242 28.843 14.7031 29.9554 12.9821C31.1255 11.1894 31.7177 9.5027 31.7177 7.92443C31.7177 6.26533 31.0919 4.87887 29.8446 3.77296C28.5907 2.58358 26.6907 2 24.1682 2C21.6404 2 19.0848 2.6244 16.5021 3.86971L16.5011 3.87021C13.98 5.11549 11.6451 6.86582 9.4961 9.11946C7.34502 11.2978 5.62476 13.8646 4.33494 16.8187C3.0437 19.7763 2.39844 22.9666 2.39844 26.3882C2.39844 29.5846 3.29221 32.0578 5.09535 33.7892L5.09712 33.7909L5.0989 33.7924C6.9576 35.4393 9.24937 36.2608 11.9662 36.2608Z" fill="white" />
+								</g>
+							</g>
+							<defs>
+								<clipPath id="clip0_1346_1923">
+									<rect width="41" height="39" fill="white" transform="translate(0.398438)" />
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+
+					<button type="button" aria-controls="buy-dropdown-marketplaces" aria-expanded="false" aria-haspopup="true" data-dropdown-trigger class="header__buy-dropdown-trigger buy-dropdown-trigger">
+
+						<span class="buy-dropdown-trigger__text nav-link">Где купить</span>
+
+						<span class="buy-dropdown-trigger__icon">
+							<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.60234 5.29981L6.00234 8.8998L2.40234 5.2998" stroke="#4E4E4E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</span>
+
+					</button>
+
+				</div>
+			</div>
+		</header>
+
+		<ul id="buy-dropdown-marketplaces" class="buy-dropdown-list">
+
+			<li class="buy-dropdown-list__item">
+				<a href="https://www.ozon.ru/seller/orele-1449169/products/?miniapp=seller_1449169" class="buy-dropdown-list__marketplace">
+
+					<span class="buy-dropdown-list__marketplace-logo marketplace-logo marketplace-logo--sm">
+						<img src="img/icons/ozon.svg" alt="Озон" width="35" height="35">
+					</span>
+
+					<span class="buy-dropdown-list__marketplace-text">Озон</span>
+
+				</a>
+			</li>
+
+			<li class="buy-dropdown-list__item">
+				<a href="https://market.yandex.ru/business--orele/92519160" class="buy-dropdown-list__marketplace">
+
+					<span class="buy-dropdown-list__marketplace-logo marketplace-logo marketplace-logo--sm">
+						<img src="img/icons/yandex-market.svg" alt="Яндекс Маркет" width="35" height="35">
+					</span>
+
+					<span class="buy-dropdown-list__marketplace-text">Яндекс Маркет</span>
+
+				</a>
+			</li>
+
+			<li class="buy-dropdown-list__item">
+				<a href="https://www.wildberries.ru/seller/3944037" class="buy-dropdown-list__marketplace">
+
+					<span class="buy-dropdown-list__marketplace-logo marketplace-logo marketplace-logo--sm">
+						<img src="img/icons/wildberries.svg" alt="Wildberries" width="35" height="35">
+					</span>
+
+					<span class="buy-dropdown-list__marketplace-text">Wildberries</span>
+
+				</a>
+			</li>
+
+			<li class="buy-dropdown-list__item">
+				<a href="https://www.letu.ru/merchant/198600006" class="buy-dropdown-list__marketplace">
+
+					<span class="buy-dropdown-list__marketplace-logo marketplace-logo marketplace-logo--sm">
+						<img src="img/icons/letual.svg" alt="Лэтуаль" width="35" height="35">
+					</span>
+
+					<span class="buy-dropdown-list__marketplace-text">Лэтуаль</span>
+
+				</a>
+			</li>
+
+			<li class="buy-dropdown-list__item">
+				<a href="#" class="buy-dropdown-list__marketplace">
+
+					<span class="buy-dropdown-list__marketplace-logo marketplace-logo marketplace-logo--sm">
+						<img src="img/icons/gold-apple.svg" alt="Золотое яблоко" width="35" height="35">
+					</span>
+
+					<span class="buy-dropdown-list__marketplace-text">Золотое яблоко</span>
+
+				</a>
+			</li>
+
+		</ul>
+
+		<main class="page page--header-padding">
+
+			<section class="hero">
+				<div class="hero__container">
+
+					<div class="hero__logo">
+						<svg width="1014" height="292" viewBox="0 0 1014 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M65.8921 204.072C65.8921 218.49 77.2734 225.7 100.036 225.7C122.799 225.7 134.18 218.49 134.18 204.072V85.5926C134.18 71.1745 122.799 63.9654 100.036 63.9654C77.2734 63.9654 65.8921 71.1745 65.8921 85.5926V204.072ZM0 87.7868C0 70.2341 8.58596 56.6519 25.7579 47.0397C42.9297 37.4276 67.6892 32.6216 100.036 32.6216C132.383 32.6216 157.143 37.4276 174.315 47.0397C191.487 56.6519 200.072 70.2341 200.072 87.7868V201.878C200.072 219.431 191.487 233.013 174.315 242.625C157.143 252.237 132.383 257.043 100.036 257.043C67.6892 257.043 42.9297 252.237 25.7579 242.625C8.58596 233.013 0 219.431 0 201.878V87.7868Z" fill="#4E4E4E" />
+							<path d="M351.112 254.536C347.119 248.267 345.122 239.282 345.122 227.58V193.101C345.122 174.504 330.745 165.205 301.993 165.205H279.23V254.536H213.338V35.1288H312.775C377.869 35.1288 410.415 51.95 410.415 85.5923V102.832C410.415 125.399 396.039 140.235 367.286 147.34C396.438 153.817 411.014 169.385 411.014 194.042V227.894C411.014 239.804 413.41 248.685 418.203 254.536H351.112ZM279.23 66.4726V133.862H304.988C331.345 133.862 344.523 126.131 344.523 110.667V89.0399C344.523 73.9951 333.342 66.4726 310.978 66.4726H279.23Z" fill="#4E4E4E" />
+							<path d="M650.926 35.1288H716.818V223.192H825.238V254.536H650.926V35.1288Z" fill="#4E4E4E" />
+							<path d="M900.186 127.593H990.641V158.937H900.186V223.192H1014V254.536H834.291V35.1288H1014V66.4726H900.186V127.593Z" fill="#4E4E4E" />
+						</svg>
+						<div class="hero__logo-e">
+							<svg width="310" height="292" viewBox="0 0 310 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M82.8284 291.333H82.8404H82.8514C111.51 290.673 138.851 281.767 164.86 264.648L164.867 264.643C191.321 246.916 215.954 225.583 238.767 200.645C262.048 175.761 283.521 151.857 303.185 128.933C306.457 125.473 308.098 121.303 308.098 116.476C308.098 114.792 307.904 113.385 307.42 112.364C307.172 111.841 306.83 111.381 306.364 111.054C305.889 110.72 305.345 110.565 304.77 110.565C303.618 110.565 302.411 111.265 301.215 112.274C299.98 113.316 298.578 114.844 297.01 116.827C287.717 127.935 275.32 141.667 259.811 158.024C244.312 174.373 227.52 190.723 209.433 207.076C191.365 222.757 173.563 236.146 156.027 247.244C138.522 257.669 123.187 262.812 109.989 262.812C97.3594 262.812 87.8574 258.042 81.3364 248.529C75.2574 238.904 72.1884 226.991 72.1884 212.736C72.1884 191.949 77.3204 170.152 87.6204 147.337C97.9324 124.495 110.82 103.616 126.284 84.6949C142.277 65.1049 157.707 51.1256 172.564 42.6954L172.566 42.6946C182.824 36.8516 191.963 33.9855 200.008 33.9855C208.595 33.9855 215.017 36.5349 219.437 41.5077L219.454 41.5274L219.473 41.5461C224.448 46.584 226.944 52.8738 226.944 60.4883C226.944 68.7605 223.926 78.0778 217.772 88.4635C211.666 98.768 201.191 109.144 186.261 119.572C172.88 128.039 158.987 134.877 144.584 140.087C130.633 144.664 120.421 146.908 113.869 146.908C110.215 146.908 107.358 147.234 105.381 147.95C104.387 148.309 103.547 148.79 102.949 149.44C102.33 150.112 102.005 150.925 102.005 151.837C102.005 152.886 102.344 153.832 103.016 154.63C103.673 155.41 104.609 156.002 105.741 156.45C107.989 157.339 111.246 157.748 115.421 157.748C126.42 157.748 139.2 155.429 153.748 150.826L153.762 150.821L153.776 150.816C168.826 145.561 182.077 139.644 193.522 133.059L193.535 133.051L193.547 133.044C211.751 121.852 225.581 108.986 234.991 94.4289C244.888 79.2648 249.897 64.998 249.897 51.6481C249.897 37.6145 244.604 25.887 234.053 16.5326C223.447 6.47217 207.376 1.53589 186.039 1.53589C164.658 1.53589 143.041 6.81744 121.195 17.351L121.187 17.3552C99.8624 27.8885 80.1124 42.6938 61.9344 61.7563C43.7394 80.1822 29.1884 101.893 18.2784 126.881C7.35644 151.898 1.89844 178.883 1.89844 207.825C1.89844 234.862 9.45842 255.782 24.7104 270.427L24.7254 270.441L24.7404 270.454C40.4624 284.384 59.8474 291.333 82.8284 291.333Z" fill="white" stroke="#4E4E4E" stroke-width="2" />
+							</svg>
+						</div>
+					</div>
+
+					<p class="hero__subtitle">
+						Уход для кожи<br>
+						Вдохновение для души
+					</p>
+
+					<div class="hero__anim-wrapper">
+
+						<div id=webgl_container></div>
+
+						<a href="catalog.html" class="button">
+							<span class="button__text">В каталог</span>
+							<span class="button__circle">
+								<img src="img/icons/arrow-right.svg" alt="Стрелка вправо" width="14" height="14">
+							</span>
+						</a>
+
+					</div>
+
+					<div class="hero__content-wrapper">
+
+						<h2 class="hero__heading heading-02">
+							Мы действуем по науке, чтобы
+							вы действовали по любви
+						</h2>
+
+						<p class="hero__text text-02">
+							Orele объединяет продукт и то, что находится
+							внутри каждого из нас
+						</p>
+
+						<a href="about-us.html" class="button">
+							<span class="button__text">О бренде</span>
+							<span class="button__circle">
+								<img src="img/icons/arrow-right.svg" alt="Стрелка вправо" width="14" height="14">
+							</span>
+						</a>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section class="assortment">
+				<div class="assortment__slider swiper">
+					<div class="assortment__wrapper swiper-wrapper">
+
+						<a href="catalog.html" class="assortment__slide swiper-slide">
+
+							<div class="assortment__side">
+
+								<p class="assortment__text">
+									Нежные текстуры<br>
+									для сияния и увлажнения
+								</p>
+
+								<span class="assortment__heading">Крема</span>
+
+							</div>
+
+							<div class="assortment__side">
+
+								<div class="assortment__image">
+									<img data-src="img/content/assortment/cream.webp" alt="Крем" width="720" height="600">
+								</div>
+
+							</div>
+
+							<div class="assortment__bottle-wrapper">
+
+								<div class="assortment__sticker sticker sticker--corner">
+									<span class="sticker__text">nutrition</span>
+									<div class="sticker__icon">
+										<img data-src="img/icons/assortment/crown.svg" alt="Корона" width="24" height="24">
+									</div>
+								</div>
+
+								<div class="assortment__bottle">
+									<img data-src="img/content/assortment/creambottle.webp" alt="Бутылка крема" width="400" height="422">
+								</div>
+
+							</div>
+
+							<button type="button" class="assortment__nav-button swiper-button-prev">
+								<div class="assortment__nav-icon">
+									<img data-src="img/icons/assortment/arrow-left-slider.svg" alt="Стрелка налево" width="22" height="23">
+								</div>
+							</button>
+
+							<button type="button" class="assortment__nav-button swiper-button-next">
+								<div class="assortment__nav-icon">
+									<img data-src="img/icons/assortment/arrow-right-slider.svg" alt="Стрелка направо" width="22" height="23">
+								</div>
+							</button>
+
+						</a>
+
+						<a href="catalog.html" class="assortment__slide assortment__slide--quinary-color swiper-slide">
+
+							<div class="assortment__side">
+
+								<p class="assortment__text">
+									Чувство свежести и чистоты
+									с результатом на лице
+								</p>
+
+								<span class="assortment__heading">Очищение</span>
+
+							</div>
+
+							<div class="assortment__side">
+
+								<div class="assortment__image">
+									<img data-src="img/content/assortment/foam.webp" alt="Очищение" width="720" height="600">
+								</div>
+
+							</div>
+
+							<div class="assortment__bottle-wrapper assortment__bottle-wrapper--fix-center">
+
+								<div class="assortment__sticker sticker sticker--corner">
+									<span class="sticker__text">foam</span>
+									<div class="sticker__icon">
+										<img data-src="img/icons/assortment/crown.svg" alt="Корона" width="24" height="24">
+									</div>
+								</div>
+
+								<div class="assortment__bottle">
+									<img data-src="img/content/assortment/foambottle.webp" alt="Очищение бутылка" width="200" height="452">
+								</div>
+
+							</div>
+
+							<button type="button" class="assortment__nav-button swiper-button-prev">
+								<div class="assortment__nav-icon">
+									<img data-src="img/icons/assortment/arrow-left-slider.svg" alt="Стрелка налево" width="22" height="23">
+								</div>
+							</button>
+
+							<button type="button" class="assortment__nav-button swiper-button-next">
+								<div class="assortment__nav-icon">
+									<img data-src="img/icons/assortment/arrow-right-slider.svg" alt="Стрелка направо" width="22" height="23">
+								</div>
+							</button>
+
+						</a>
+
+						<a href="catalog.html" class="assortment__slide assortment__slide--secondary-color swiper-slide">
+
+							<div class="assortment__side">
+
+								<p class="assortment__text">
+									Индивидуальный подход
+									и эффективность
+								</p>
+
+								<span class="assortment__heading">Cыворотки</span>
+
+							</div>
+
+							<div class="assortment__side">
+
+								<div class="assortment__image">
+									<img data-src="img/content/assortment/serums.webp" alt="Cыворотки" width="720" height="600">
+								</div>
+
+							</div>
+
+							<div class="assortment__bottle-wrapper">
+
+								<div class="assortment__sticker sticker sticker--corner">
+									<span class="sticker__text">effective</span>
+									<div class="sticker__icon">
+										<img data-src="img/icons/assortment/crown.svg" alt="Корона" width="24" height="24">
+									</div>
+								</div>
+
+								<div class="assortment__bottle">
+									<img data-src="img/content/assortment/serumsbottle.webp" alt="Cыворотки бутылка" width="300" height="485">
+								</div>
+
+							</div>
+
+							<button type="button" class="assortment__nav-button swiper-button-prev">
+								<div class="assortment__nav-icon">
+									<img data-src="img/icons/assortment/arrow-left-slider.svg" alt="Стрелка налево" width="22" height="23">
+								</div>
+							</button>
+
+							<button type="button" class="assortment__nav-button swiper-button-next">
+								<div class="assortment__nav-icon">
+									<img data-src="img/icons/assortment/arrow-right-slider.svg" alt="Стрелка направо" width="22" height="23">
+								</div>
+							</button>
+
+						</a>
+
+						<a href="catalog.html" class="assortment__slide assortment__slide--quaternary-color swiper-slide">
+
+							<div class="assortment__side">
+
+								<p class="assortment__text">
+									Для бережного очищения
+									и гладкости кожи
+								</p>
+
+								<span class="assortment__heading">Cкраб</span>
+
+							</div>
+
+							<div class="assortment__side">
+
+								<div class="assortment__image">
+									<img data-src="img/content/assortment/scrub.webp" alt="Скраб" width="720" height="600">
+								</div>
+
+							</div>
+
+							<div class="assortment__bottle-wrapper">
+
+								<div class="assortment__sticker sticker sticker--corner">
+									<span class="sticker__text">smooth</span>
+									<div class="sticker__icon">
+										<img data-src="img/icons/assortment/crown.svg" alt="Корона" width="24" height="24">
+									</div>
+								</div>
+
+								<div class="assortment__bottle">
+									<img data-src="img/content/assortment/scrubbottle.webp" alt="Бутылка скраб" width="380" height="559">
+								</div>
+
+							</div>
+
+							<button type="button" class="assortment__nav-button swiper-button-prev">
+								<div class="assortment__nav-icon">
+									<img data-src="img/icons/assortment/arrow-left-slider.svg" alt="Стрелка налево" width="22" height="23">
+								</div>
+							</button>
+
+							<button type="button" class="assortment__nav-button swiper-button-next">
+								<div class="assortment__nav-icon">
+									<img data-src="img/icons/assortment/arrow-right-slider.svg" alt="Стрелка направо" width="22" height="23">
+								</div>
+							</button>
+
+						</a>
+
+						<a href="catalog.html" class="assortment__slide assortment__slide--tertiary-color swiper-slide">
+
+							<div class="assortment__side">
+
+								<p class="assortment__text">
+									Много пены и удовольствия
+								</p>
+
+								<span class="assortment__heading">шампунь</span>
+
+							</div>
+
+							<div class="assortment__side">
+
+								<div class="assortment__image">
+									<img data-src="img/content/assortment/shampoo.webp" alt="Шампунь" width="720" height="600">
+								</div>
+
+							</div>
+
+							<div class="assortment__bottle-wrapper">
+
+								<div class="assortment__sticker sticker sticker--corner">
+									<span class="sticker__text">silk touch</span>
+									<div class="sticker__icon">
+										<img data-src="img/icons/assortment/crown.svg" alt="Корона" width="24" height="24">
+									</div>
+								</div>
+
+								<div class="assortment__bottle">
+									<img data-src="img/content/assortment/shampoobottle.webp" alt="Бутылка шампунь" width="320" height="574">
+								</div>
+
+							</div>
+
+							<button type="button" class="assortment__nav-button swiper-button-prev">
+								<div class="assortment__nav-icon">
+									<img data-src="img/icons/assortment/arrow-left-slider.svg" alt="Стрелка налево" width="22" height="23">
+								</div>
+							</button>
+
+							<button type="button" class="assortment__nav-button swiper-button-next">
+								<div class="assortment__nav-icon">
+									<img data-src="img/icons/assortment/arrow-right-slider.svg" alt="Стрелка направо" width="22" height="23">
+								</div>
+							</button>
+
+						</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="about-brand">
+				<div class="about-brand__container">
+
+					<div class="about-brand__text-wrapper">
+						<h2 class="about-brand__heading heading-02">
+							политика ORELE — открытость!<br>
+							Рассказываем о каждом этапе создания продукта
+						</h2>
+					</div>
+
+					<div class="about-brand__image-container">
+						<div class="about-brand__image-wrapper">
+
+							<div class="about-brand__image">
+								<img data-src="img/content/about-brand/photo-lying-down.webp" alt="Фотосессия лёжа" width="920" height="500">
+							</div>
+
+							<div class="about-brand__sticker sticker">
+
+								<span class="sticker__text">ecology</span>
+
+								<div class="sticker__icon">
+									<img data-src="img/icons/about-brand/sun.svg" alt="Солнце" width="27" height="27">
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<div class="about-brand__step">
+						<h2 class="about-brand__step-heading heading-02">производство</h2>
+						<p class="about-brand__step-text text-02">
+							Составы, которые можно<br>
+							прочесть на одном дыхании
+						</p>
+					</div>
+
+					<div class="about-brand__step">
+						<h2 class="about-brand__step-heading heading-02">Упаковка</h2>
+						<p class="about-brand__step-text text-02">
+							Легко открыть даже мокрыми руками
+							и невозможно разбить даже о самую
+							прочную плитку
+						</p>
+					</div>
+
+					<div class="about-brand__step">
+						<h2 class="about-brand__step-heading heading-02">Польза</h2>
+						<p class="about-brand__step-text text-02">
+							В основе всегда аптечный рецепт
+							с доказанной эффективностью, а всё
+							остальное для удовольствия
+						</p>
+					</div>
+
+					<div class="about-brand__step">
+						<h2 class="about-brand__step-heading heading-02">эстетика</h2>
+						<p class="about-brand__step-text text-02">
+							Смелость и яркость, которых так
+							не хватает, мы отражаем в упаковках,
+							привлекая к их созданию современных дизайнеров и художников
+						</p>
+					</div>
+
+				</div>
+			</section>
+
+			<div class="fullscreen-image">
+
+				<div class="fullscreen-image__image">
+					<img data-src="img/content/fullscreen-image/belly.webp" alt="Фотоссесия живот" width="1440" height="890">
+				</div>
+
+				<span class="fullscreen-image__text">
+					<span>Ты</span>
+					можешь
+					быть
+					любы[и]м
+				</span>
+
+			</div>
+
+			<section class="explore-blog">
+				<div class="explore-blog__container">
+
+					<h2 class="explore-blog__heading heading-02">
+						наш блог
+					</h2>
+
+					<div class="explore-blog__slider swiper">
+						<div class="explore-blog__wrapper swiper-wrapper">
+
+							<article class="explore-blog__post-card post-card swiper-slide">
+								<a href="history.html" class="post-card__body">
+
+									<div class="post-card__image">
+										<img data-src="img/content/blog/standing-bottle.webp" alt="Стоящий флакон фотоссесия" width="440" height="282">
+									</div>
+
+									<h3 class="post-card__heading heading-03">в ритме города</h3>
+
+								</a>
+							</article>
+
+							<article class="explore-blog__post-card post-card swiper-slide">
+								<a href="history.html" class="post-card__body">
+
+									<div class="post-card__image">
+										<img data-src="img/content/blog/holding-bottle.webp" alt="Флакон держат фотоссесия" width="440" height="457">
+									</div>
+
+									<h3 class="post-card__heading heading-03">сыворотки: инструкция<br> по применению</h3>
+
+								</a>
+							</article>
+
+							<article class="explore-blog__post-card post-card swiper-slide">
+								<a href="history.html" class="post-card__body">
+
+									<div class="post-card__image">
+										<img data-src="img/content/blog/holding-box.webp" alt="Коробку держат фотоссесия" width="440" height="322">
+									</div>
+
+									<h3 class="post-card__heading heading-03">история «ты можешь быть любы(и)м»</h3>
+
+								</a>
+							</article>
+
+						</div>
+					</div>
+
+					<div class="explore-blog__button-wrapper">
+
+						<a href="blog.html" class="button">
+							<span class="button__text">перейти в блог</span>
+							<span class="button__circle">
+								<img data-src="img/icons/arrow-right.svg" alt="Стрелка вправо" width="14" height="14">
+							</span>
+						</a>
+
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+
+				<div class="footer__body">
+
+					<div class="footer__logo-container">
+						<div class="footer__logo-wrapper">
+
+							<a href="index.html" class="footer__logo">
+								<img src="img/icons/logo.svg" alt="Orele лого" width="500" height="139">
+							</a>
+
+							<div class="footer__sticker sticker sticker--sm">
+								<span class="sticker__text">with love</span>
+								<div class="sticker__icon">
+									<img data-src="img/icons/heart-arrow.svg" alt="Сердце со стрелой" width="36" height="21">
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="footer__links">
+
+						<ul class="footer__nav">
+
+							<li class="footer__nav-item"><a href="index.html" class="footer__link nav-link">Главная</a></li>
+
+							<li class="footer__nav-item"><a href="catalog.html" class="footer__link nav-link">Каталог</a></li>
+
+							<li class="footer__nav-item"><a href="about-us.html" class="footer__link nav-link">О нас</a></li>
+
+							<li class="footer__nav-item"><a href="blog.html" class="footer__link nav-link">Блог</a></li>
+
+							<li class="footer__nav-item"><a href="contacts.html" class="footer__link nav-link">Контакты</a></li>
+
+						</ul>
+
+						<div class="footer__contacts">
+
+							<div class="footer__contact-item contact-item">
+
+								<a href="mailto:pr.orelecosmetics@mail.ru" class="contact-item__link">pr.orelecosmetics@mail.ru</a>
+
+								<p class="contact-item__text text-02 ">
+									Для отзывов и вопросов и продукции,<br>
+									а также для сотрудничества
+								</p>
+
+							</div>
+
+							<div class="footer__contact-item contact-item">
+
+								<a href="mailto:orelecosmetics@mail.ru" class="contact-item__link">orelecosmetics@mail.ru</a>
+
+								<p class="contact-item__text text-02 ">
+									Для партнёров
+								</p>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="footer__round-links">
+
+						<p class="footer__text text-02 ">
+							Совсем скоро мы запустим новые линейки<br>
+							по ходу и много чего ещё! Cледите<br>
+							за анонсами в соцсетях
+						</p>
+
+						<ul class="footer__round-links-wrapper">
+
+							<li class="footer__round-links-item">
+								<a href="https://t.me/ORELE_bot" class="footer__social-logo social-logo">
+									<svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M22.7121 0.473646L1.45268 9.16256C0.00181705 9.78021 0.0102107 10.638 1.18649 11.0206L6.64463 12.8252L19.2732 4.38029C19.8703 3.99522 20.4159 4.20237 19.9674 4.6243L9.73581 14.4112H9.73341L9.73581 14.4125L9.3593 20.3754C9.91087 20.3754 10.1543 20.1073 10.4636 19.7908L13.1148 17.0585L18.6293 21.3756C19.6461 21.9691 20.3763 21.6641 20.6293 20.378L24.2493 2.29607C24.6198 0.721465 23.6821 0.00850832 22.7121 0.473646Z" fill="#595959" />
+									</svg>
+								</a>
+							</li>
+
+							<li class="footer__round-links-item">
+								<a href="https://instagram.com/orele.beauty?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr" class="footer__social-logo social-logo">
+									<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.0952 0.334686C12.8736 0.3317 13.6519 0.339522 14.4301 0.358152L14.637 0.365619C14.8759 0.374152 15.1116 0.384818 15.3964 0.397618C16.5313 0.450949 17.3056 0.630143 17.9851 0.893601C18.689 1.16452 19.2821 1.53145 19.8751 2.12449C20.4173 2.65739 20.837 3.30199 21.1049 4.01349C21.3684 4.69294 21.5476 5.46838 21.6009 6.60327C21.6137 6.887 21.6244 7.12379 21.6329 7.36271L21.6393 7.56964C21.6582 8.34742 21.6664 9.12542 21.6638 9.90343L21.6649 10.6991V12.0964C21.6675 12.8748 21.6593 13.6531 21.6404 14.4313L21.634 14.6382C21.6254 14.8771 21.6148 15.1128 21.602 15.3976C21.5486 16.5325 21.3673 17.3069 21.1049 17.9863C20.8379 18.6986 20.4181 19.3437 19.8751 19.8764C19.3418 20.4186 18.6968 20.8383 17.9851 21.1062C17.3056 21.3697 16.5313 21.5489 15.3964 21.6022C15.1116 21.615 14.8759 21.6257 14.637 21.6342L14.4301 21.6406C13.6519 21.6596 12.8736 21.6678 12.0952 21.6652L11.2995 21.6662H9.90335C9.12501 21.6689 8.34666 21.6607 7.56854 21.6417L7.36162 21.6353C7.10842 21.6261 6.85527 21.6154 6.60219 21.6033C5.46732 21.55 4.69296 21.3686 4.01246 21.1062C3.30069 20.8389 2.65598 20.4191 2.12349 19.8764C1.58063 19.3434 1.16058 18.6984 0.892618 17.9863C0.629165 17.3069 0.449974 16.5325 0.396643 15.3976C0.384764 15.1445 0.374098 14.8914 0.364645 14.6382L0.359312 14.4313C0.339648 13.6531 0.330758 12.8748 0.332647 12.0964V9.90343C0.32967 9.12543 0.337492 8.34742 0.356112 7.56964L0.363578 7.36271C0.372111 7.12379 0.382777 6.887 0.395577 6.60327C0.448907 5.46731 0.628098 4.694 0.891551 4.01349C1.15967 3.30165 1.58054 2.65722 2.12455 2.12556C2.65668 1.58238 3.30099 1.16194 4.01246 0.893601C4.69296 0.630143 5.46625 0.450949 6.60219 0.397618L7.36162 0.365619L7.56854 0.360286C8.3463 0.340631 9.12429 0.331741 9.90229 0.33362L12.0952 0.334686ZM10.9988 5.66784C10.2921 5.65784 9.59058 5.78839 8.93485 6.0519C8.27911 6.3154 7.68229 6.70661 7.17906 7.20278C6.67583 7.69895 6.27624 8.29019 6.00349 8.94214C5.73074 9.59409 5.59029 10.2937 5.59029 11.0005C5.59029 11.7072 5.73074 12.4068 6.00349 13.0588C6.27624 13.7107 6.67583 14.302 7.17906 14.7981C7.68229 15.2943 8.27911 15.6855 8.93485 15.949C9.59058 16.2125 10.2921 16.3431 10.9988 16.3331C12.4132 16.3331 13.7697 15.7712 14.7698 14.771C15.77 13.7709 16.3318 12.4144 16.3318 10.9999C16.3318 9.58548 15.77 8.22897 14.7698 7.22881C13.7697 6.22865 12.4132 5.66784 10.9988 5.66784ZM10.9988 7.8011C11.4238 7.79327 11.8462 7.87021 12.2412 8.02744C12.6361 8.18468 12.9958 8.41904 13.2992 8.71685C13.6026 9.01465 13.8436 9.36993 14.0082 9.76193C14.1727 10.1539 14.2575 10.5748 14.2575 10.9999C14.2576 11.425 14.173 11.8459 14.0086 12.238C13.8442 12.63 13.6033 12.9854 13.3 13.2833C12.9967 13.5812 12.6371 13.8157 12.2421 13.9731C11.8472 14.1304 11.4249 14.2075 10.9998 14.1998C10.1512 14.1998 9.33729 13.8627 8.73721 13.2626C8.13712 12.6625 7.8 11.8486 7.8 10.9999C7.8 10.1513 8.13712 9.33735 8.73721 8.73726C9.33729 8.13716 10.1512 7.80003 10.9998 7.80003L10.9988 7.8011ZM16.5985 4.06789C16.2544 4.08166 15.929 4.22805 15.6904 4.47638C15.4518 4.72471 15.3185 5.05574 15.3185 5.40011C15.3185 5.74449 15.4518 6.07551 15.6904 6.32385C15.929 6.57218 16.2544 6.71856 16.5985 6.73233C16.9521 6.73233 17.2912 6.59186 17.5412 6.34182C17.7913 6.09178 17.9317 5.75266 17.9317 5.39905C17.9317 5.04544 17.7913 4.70631 17.5412 4.45627C17.2912 4.20623 16.9521 4.06576 16.5985 4.06576V4.06789Z" fill="#595959" />
+									</svg>
+								</a>
+							</li>
+
+							<li class="footer__round-links-item">
+								<a href="https://vk.com/orele.cosmetics" class="footer__social-logo social-logo">
+									<svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M26.2618 15.9987H23.3433C22.2391 15.9987 21.9064 15.0954 19.927 13.095C18.1971 11.4112 17.4665 11.2018 17.0289 11.2018C16.4237 11.2018 16.2587 11.3698 16.2587 12.2111V14.8628C16.2587 15.58 16.0284 16 14.1731 16C12.3732 15.8779 10.6278 15.3256 9.08064 14.3887C7.53348 13.4519 6.22884 12.1571 5.27417 10.6113C3.00739 7.76184 1.43018 4.41753 0.667969 0.84431C0.667969 0.402356 0.834304 0.00175335 1.66854 0.00175335H4.5858C5.33558 0.00175335 5.60556 0.339035 5.89984 1.11827C7.31625 5.32847 9.73323 8.99075 10.7146 8.99075C11.0908 8.99075 11.2546 8.82276 11.2546 7.87553V3.53868C11.1304 1.56023 10.0902 1.39352 10.0902 0.677608C10.1034 0.488732 10.1889 0.312477 10.3287 0.18628C10.4684 0.0600833 10.6514 -0.00611242 10.8387 0.00175335H15.4244C16.0514 0.00175335 16.2587 0.317066 16.2587 1.07433V6.9283C16.2587 7.56021 16.5274 7.76956 16.7167 7.76956C17.0929 7.76956 17.3821 7.56021 18.0717 6.86497C19.55 5.04416 20.7577 3.01553 21.6569 0.843018C21.7489 0.582179 21.9229 0.358902 22.1523 0.207246C22.3817 0.0555888 22.6539 -0.0161242 22.9274 0.00304553H25.846C26.7211 0.00304553 26.9067 0.445001 26.7211 1.07563C25.6596 3.47719 24.3462 5.75686 22.8033 7.87553C22.4886 8.36013 22.3632 8.61212 22.8033 9.18071C23.0925 9.62267 24.1161 10.4859 24.8032 11.3065C25.8037 12.3145 26.6341 13.4801 27.2624 14.7568C27.5132 15.5787 27.0948 15.9987 26.2618 15.9987Z" fill="#595959" />
+									</svg>
+								</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="footer__round-links">
+
+						<p class="footer__text text-02 ">
+							Где купить
+						</p>
+
+						<ul class="footer__round-links-wrapper">
+
+							<li class="footer__round-links-item">
+								<a href="https://www.ozon.ru/seller/orele-1449169/products/?miniapp=seller_1449169" class="footer__marketplace-logo marketplace-logo">
+									<img src="img/icons/ozon.svg" alt="Озон" width="64" height="64">
+								</a>
+							</li>
+
+							<li class="footer__round-links-item">
+								<a href="https://market.yandex.ru/business--orele/92519160" class="footer__marketplace-logo marketplace-logo">
+									<img src="img/icons/yandex-market.svg" alt="Яндекс Маркет" width="64" height="64">
+								</a>
+							</li>
+
+							<li class="footer__round-links-item">
+								<a href="https://www.wildberries.ru/seller/3944037" class="footer__marketplace-logo marketplace-logo">
+									<img src="img/icons/wildberries.svg" alt="Wildberries" width="64" height="64">
+								</a>
+							</li>
+
+							<li class="footer__round-links-item">
+								<a href="https://www.letu.ru/merchant/198600006" class="footer__marketplace-logo marketplace-logo">
+									<img src="img/icons/letual.svg" alt="Лэтуаль" width="64" height="64">
+								</a>
+							</li>
+
+							<li class="footer__round-links-item">
+								<a href="#" class="footer__marketplace-logo marketplace-logo">
+									<img src="img/icons/gold-apple.svg" alt="Золотое яблоко" width="64" height="64">
+								</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="footer__bottom">
+
+					<span class="footer__copyright text-02 ">2024, ORELE ©</span>
+
+					<div class="footer__resources">
+
+						<a href="history.html" class="footer__resource-link text-02 ">Политика конфиденциальности</a>
+
+						<a href="history.html" class="footer__resource-link text-02 ">Пользовательское соглашение</a>
+
+					</div>
+
+				</div>
+
+			</div>
+		</footer>;
+		</script>
+
+		<noscript class=psa_add_styles>
+			<style type="text/css">
+				#webgl_container {
+					background-image: url(./back.webp);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: center;
+					position: absolute;
+					bottom: -6rem;
+					left: 50%;
+					transform: translateX(-50%);
+					z-index: 16;
+				}
+
+				@media (min-width:90em) {
+					#webgl_container {
+						width: 57rem
+					}
+				}
+
+				@media (max-width:22.5em) {
+					#webgl_container {
+						width: 36rem
+					}
+				}
+
+				@media (min-width:22.5em) and (max-width:90em) {
+					@supports (width:clamp(36rem, 29rem + 31.1111111111vw, 57rem)) {
+						#webgl_container {
+							width: clamp(36rem, 29rem + 31.1111111111vw, 57rem)
+						}
+					}
+
+					@supports not (width:clamp(36rem, 29rem + 31.1111111111vw, 57rem)) {
+						#webgl_container {
+							width: calc(36rem + 21 * (100vw - 22.5rem)/ 67.5)
+						}
+					}
+				}
+
+				#webgl_canvas {
+					width: 100% !important;
+					height: auto !important;
+				}
+			</style>
+		</noscript>
+
+		<script data-pagespeed-no-defer type="text/javascript">
+			(function() {
+				function b() {
+					var a = window,
+						c = e;
+					if (a.addEventListener) a.addEventListener("load", c, !1);
+					else if (a.attachEvent) a.attachEvent("onload", c);
+					else {
+						var d = a.onload;
+						a.onload = function() {
+							c.call(this);
+							d && d.call(this)
+						}
+					}
+				};
+				var f = !1;
+
+				function e() {
+					if (!f) {
+						f = !0;
+						for (var a = document.getElementsByClassName("psa_add_styles"), c = 0, d; d = a[c]; ++c)
+							if ("NOSCRIPT" == d.nodeName) {
+								var k = document.createElement("div");
+								k.innerHTML = d.textContent;
+								document.body.appendChild(k)
+							}
+					}
+				}
+
+				function g() {
+					var a = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || null;
+					a ? a(function() {
+						window.setTimeout(e, 0)
+					}) : b()
+				}
+				var h = ["pagespeed", "CriticalCssLoader", "Run"],
+					l = this;
+				h[0] in l || !l.execScript || l.execScript("var " + h[0]);
+				for (var m; h.length && (m = h.shift());) h.length || void 0 === g ? l[m] ? l = l[m] : l = l[m] = {} : l[m] = g;
+			})();
+			pagespeed.CriticalCssLoader.Run();
+		</script>
+
+		<script src="js/app.min.js?_v=20240523025544"></script>
+</body>
+
+</html>
