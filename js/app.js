@@ -4087,10 +4087,6 @@
                         loop: true,
                         lazy: true,
                         effect: "fade",
-                        autoplay: {
-                            delay: 3e3,
-                            disableOnInteraction: true
-                        },
                         navigation: {
                             prevEl: ".swiper-button-prev",
                             nextEl: ".swiper-button-next"
@@ -4174,6 +4170,24 @@
                 }
             }));
         }));
+        const animOnHoverElems = document.querySelectorAll("[data-anim-hover]");
+        function applyHoverAnimations() {
+            if (window.innerWidth >= 768) animOnHoverElems.forEach((elem => {
+                elem.addEventListener("mouseover", onMouseOver);
+                elem.addEventListener("animationend", onAnimationEnd);
+            })); else animOnHoverElems.forEach((elem => {
+                elem.removeEventListener("mouseover", onMouseOver);
+                elem.removeEventListener("animationend", onAnimationEnd);
+            }));
+        }
+        function onMouseOver(event) {
+            event.currentTarget.classList.add("animation-active");
+        }
+        function onAnimationEnd(event) {
+            event.currentTarget.classList.remove("animation-active");
+        }
+        window.addEventListener("resize", applyHoverAnimations);
+        applyHoverAnimations();
         const header = document.querySelector(".header");
         window.addEventListener("scroll", (function(e) {
             if (window.scrollY > 0 && !header.classList.contains("header--short")) header.classList.add("header--short");
