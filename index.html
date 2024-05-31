@@ -830,99 +830,114 @@
 
 			</div>
 		</footer>
-		</script>
+	</div>
 
-		<noscript class=psa_add_styles>
-			<style type="text/css">
+	<script type=module>
+		import Orele from "./app.js";
+		import Settings from "./scene_settings.js";
+
+		function onLoad() {
+			document.querySelector("#webgl_container").style.backgroundImage = "none"
+		};
+
+		new Orele({
+			container: document.querySelector("#webgl_container"),
+			sceneParams: Settings,
+			onLoad: onLoad,
+		});
+	</script>
+
+	<noscript class=psa_add_styles>
+		<style type="text/css">
+			#webgl_container {
+				background-image: url(./back.webp);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				position: absolute;
+				bottom: -6rem;
+				left: 50%;
+				transform: translateX(-50%);
+				z-index: 16;
+			}
+
+			@media (min-width:90em) {
 				#webgl_container {
-					background-image: url(./back.webp);
-					background-size: contain;
-					background-repeat: no-repeat;
-					background-position: center;
-					position: absolute;
-					bottom: -6rem;
-					left: 50%;
-					transform: translateX(-50%);
-					z-index: 16;
+					width: 57rem
 				}
+			}
 
-				@media (min-width:90em) {
+			@media (max-width:22.5em) {
+				#webgl_container {
+					width: 36rem
+				}
+			}
+
+			@media (min-width:22.5em) and (max-width:90em) {
+				@supports (width:clamp(36rem, 29rem + 31.1111111111vw, 57rem)) {
 					#webgl_container {
-						width: 57rem
+						width: clamp(36rem, 29rem + 31.1111111111vw, 57rem)
 					}
 				}
 
-				@media (max-width:22.5em) {
+				@supports not (width:clamp(36rem, 29rem + 31.1111111111vw, 57rem)) {
 					#webgl_container {
-						width: 36rem
+						width: calc(36rem + 21 * (100vw - 22.5rem)/ 67.5)
 					}
 				}
+			}
 
-				@media (min-width:22.5em) and (max-width:90em) {
-					@supports (width:clamp(36rem, 29rem + 31.1111111111vw, 57rem)) {
-						#webgl_container {
-							width: clamp(36rem, 29rem + 31.1111111111vw, 57rem)
+			#webgl_canvas {
+				width: 100% !important;
+				height: auto !important;
+			}
+		</style>
+	</noscript>
+
+	<script data-pagespeed-no-defer type="text/javascript">
+		(function () {
+			function b() {
+				var a = window,
+					c = e;
+				if (a.addEventListener) a.addEventListener("load", c, !1);
+				else if (a.attachEvent) a.attachEvent("onload", c);
+				else {
+					var d = a.onload;
+					a.onload = function () {
+						c.call(this);
+						d && d.call(this)
+					}
+				}
+			};
+			var f = !1;
+
+			function e() {
+				if (!f) {
+					f = !0;
+					for (var a = document.getElementsByClassName("psa_add_styles"), c = 0, d; d = a[c]; ++c)
+						if ("NOSCRIPT" == d.nodeName) {
+							var k = document.createElement("div");
+							k.innerHTML = d.textContent;
+							document.body.appendChild(k)
 						}
-					}
-
-					@supports not (width:clamp(36rem, 29rem + 31.1111111111vw, 57rem)) {
-						#webgl_container {
-							width: calc(36rem + 21 * (100vw - 22.5rem)/ 67.5)
-						}
-					}
 				}
+			}
 
-				#webgl_canvas {
-					width: 100% !important;
-					height: auto !important;
-				}
-			</style>
-		</noscript>
+			function g() {
+				var a = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || null;
+				a ? a(function () {
+					window.setTimeout(e, 0)
+				}) : b()
+			}
+			var h = ["pagespeed", "CriticalCssLoader", "Run"],
+				l = this;
+			h[0] in l || !l.execScript || l.execScript("var " + h[0]);
+			for (var m; h.length && (m = h.shift());) h.length || void 0 === g ? l[m] ? l = l[m] : l = l[m] = {} : l[m] = g;
+		})();
+		pagespeed.CriticalCssLoader.Run();
+	</script>
 
-		<script data-pagespeed-no-defer type="text/javascript">
-			(function() {
-				function b() {
-					var a = window,
-						c = e;
-					if (a.addEventListener) a.addEventListener("load", c, !1);
-					else if (a.attachEvent) a.attachEvent("onload", c);
-					else {
-						var d = a.onload;
-						a.onload = function() {
-							c.call(this);
-							d && d.call(this)
-						}
-					}
-				};
-				var f = !1;
-
-				function e() {
-					if (!f) {
-						f = !0;
-						for (var a = document.getElementsByClassName("psa_add_styles"), c = 0, d; d = a[c]; ++c)
-							if ("NOSCRIPT" == d.nodeName) {
-								var k = document.createElement("div");
-								k.innerHTML = d.textContent;
-								document.body.appendChild(k)
-							}
-					}
-				}
-
-				function g() {
-					var a = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || null;
-					a ? a(function() {
-						window.setTimeout(e, 0)
-					}) : b()
-				}
-				var h = ["pagespeed", "CriticalCssLoader", "Run"],
-					l = this;
-				h[0] in l || !l.execScript || l.execScript("var " + h[0]);
-				for (var m; h.length && (m = h.shift());) h.length || void 0 === g ? l[m] ? l = l[m] : l = l[m] = {} : l[m] = g;
-			})();
-			pagespeed.CriticalCssLoader.Run();
-		</script>
-
-		<script src="js/app.min.js?_v=20240531111218"></script>
+	<script src="js/app.min.js?_v=20240531111218"></script>
 </body>
 
 </html>
