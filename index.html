@@ -5,28 +5,44 @@
 	<title>Orele</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240526030550">
+
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.webp">
-	<link rel="icon" type="image.webp" sizes="32x32" href="/favicon-32x32.webp">
-	<link rel="icon" type="image.webp" sizes="16x16" href="/favicon-16x16.webp">
+	<meta name="Copyright" content="2024, ORELE ©">
+	<meta name="description" content="Уход для кожи. Вдохновение для души.">
+	<meta name="keywords" content="сыворотки для лица, косметика для лица, уходовая косметика, натуральные сыворотки для лица, увлажняющая сыворотка для лица, сыворотка от акне, антивозрастная сыворотка, ночная сыворотка, омолаживающая сыворотка">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
 
-	<script type="text/javascript" data-pagespeed-no-defer>
-		(function () {
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Orele">
+	<meta property="og:description" content="Уход для кожи. Вдохновение для души.">
+	<meta property="og:image" content="img/content/blog/holding-bottle.webp">
+	<meta property="og:url" content="#">
+	<meta property="og:site_name" content="Orele">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="Orele">
+	<meta name="twitter:title" content="Orele">
+	<meta name="twitter:description" content="Уход для кожи. Вдохновение для души.">
+	<meta name="twitter:image" content="img/content/blog/holding-bottle.webp">
+
+	<script type="text/javascript" data-pagespeed-no-defer="">
+		(function() {
 			function f(a, b, d) {
 				if (a.addEventListener) a.addEventListener(b, d, !1);
 				else if (a.attachEvent) a.attachEvent("on" + b, d);
 				else {
 					var c = a["on" + b];
-					a["on" + b] = function () {
+					a["on" + b] = function() {
 						d.call(this);
 						c && c.call(this)
 					}
@@ -61,13 +77,13 @@
 				var d, c, e;
 				if (!a.b && (0 == b.offsetHeight || 0 == b.offsetWidth)) return !1;
 				a: if (b.currentStyle) c = b.currentStyle.position;
-				else {
-					if (document.defaultView && document.defaultView.getComputedStyle && (c = document.defaultView.getComputedStyle(b, null))) {
-						c = c.getPropertyValue("position");
-						break a
+					else {
+						if (document.defaultView && document.defaultView.getComputedStyle && (c = document.defaultView.getComputedStyle(b, null))) {
+							c = c.getPropertyValue("position");
+							break a
+						}
+						c = b.style && b.style.position ? b.style.position : ""
 					}
-					c = b.style && b.style.position ? b.style.position : ""
-				}
 				if ("relative" == c) return !0;
 				e = 0;
 				"number" == typeof window.pageYOffset ? e = window.pageYOffset : document.body && document.body.scrollTop ? e = document.body.scrollTop : document.documentElement &&
@@ -79,10 +95,10 @@
 				h ? (e = h.top - d, c = h.bottom) : (h = l(a, b), d = h + b.offsetHeight, e = h - e, c = d - c);
 				return e <= a.f && 0 <= c + a.f
 			}
-			k.prototype.m = function (a) {
+			k.prototype.m = function(a) {
 				p(a);
 				var b = this;
-				window.setTimeout(function () {
+				window.setTimeout(function() {
 					var d = a.getAttribute("data-pagespeed-lazy-src");
 					if (d)
 						if ((b.h || m(b, a)) && -1 != a.src.indexOf(b.j)) {
@@ -91,7 +107,7 @@
 							c && c.removeChild(a);
 							a.c && (a.getAttribute = a.c);
 							a.removeAttribute("onload");
-							a.tagName && "IMG" == a.tagName && g.CriticalImages && f(a, "load", function () {
+							a.tagName && "IMG" == a.tagName && g.CriticalImages && f(a, "load", function() {
 								g.CriticalImages.checkImageForCriticality(this);
 								b.b && (b.a--, b.a || g.CriticalImages.checkCriticalImages())
 							});
@@ -104,7 +120,7 @@
 				}, 0)
 			};
 			k.prototype.loadIfVisibleAndMaybeBeacon = k.prototype.m;
-			k.prototype.s = function () {
+			k.prototype.s = function() {
 				this.h = !0;
 				q(this)
 			};
@@ -120,23 +136,23 @@
 			function t(a, b) {
 				return a.a ? null != a.a(b) : null != a.getAttribute(b)
 			}
-			k.prototype.u = function () {
+			k.prototype.u = function() {
 				for (var a = document.getElementsByTagName("img"), b = 0, d; d = a[b]; b++) t(d, "data-pagespeed-lazy-src") && p(d)
 			};
 			k.prototype.overrideAttributeFunctions = k.prototype.u;
 
 			function p(a) {
-				t(a, "data-pagespeed-lazy-replaced-functions") || (a.c = a.getAttribute, a.getAttribute = function (a) {
+				t(a, "data-pagespeed-lazy-replaced-functions") || (a.c = a.getAttribute, a.getAttribute = function(a) {
 					"src" == a.toLowerCase() && t(this, "data-pagespeed-lazy-src") && (a = "data-pagespeed-lazy-src");
 					return this.c(a)
 				}, a.setAttribute("data-pagespeed-lazy-replaced-functions", "1"))
 			}
-			g.o = function (a, b) {
+			g.o = function(a, b) {
 				function d() {
 					if (!(c.b && a || c.i)) {
 						var b = 200;
 						200 < (new Date).getTime() - c.l && (b = 0);
-						c.i = window.setTimeout(function () {
+						c.i = window.setTimeout(function() {
 							c.l = (new Date).getTime();
 							q(c);
 							c.i = null
@@ -145,7 +161,7 @@
 				}
 				var c = new k(b);
 				g.lazyLoadImages = c;
-				f(window, "load", function () {
+				f(window, "load", function() {
 					c.b = !0;
 					c.h = a;
 					c.f = 200;
@@ -164,9 +180,8 @@
 			g.lazyLoadInit = g.o;
 		})();
 
-		pagespeed.lazyLoadInit(true, "/pagespeed_static/1.JiBnMqyl6S.webp");
+		pagespeed.lazyLoadInit(true, "/pagespeed_static/1.JiBnMqyl6S.gif");
 	</script>
-
 </head>
 
 <body>
