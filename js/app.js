@@ -4087,6 +4087,10 @@
                         loop: true,
                         lazy: true,
                         effect: "fade",
+                        autoplay: {
+                            delay: 3e3,
+                            disableOnInteraction: true
+                        },
                         navigation: {
                             prevEl: ".swiper-button-prev",
                             nextEl: ".swiper-button-next"
