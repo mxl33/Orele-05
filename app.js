@@ -239,7 +239,7 @@ class Visual{ // 3d - визуализация
 
 		var pixelRatio = devicePixelRatio;
 		
-		var pixelRatio = 2;
+		var pixelRatio = 3;
 		
 		var scaledSize = smallSide * pixelRatio;
 		
