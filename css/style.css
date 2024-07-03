@@ -889,6 +889,7 @@ body {
 }
 .footer__resources {
   display: flex;
+  gap: .875rem;
   justify-content: space-between;
   min-width: 31.25rem
 }
@@ -1359,7 +1360,7 @@ body {
 }
 .product__price {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: 1.25rem!important;
   font-weight: 600
 }
 .product__description {
@@ -2105,9 +2106,6 @@ body {
   }
   .footer__round-links {
     gap: 1.25rem
-  }
-  .footer__resources {
-    gap: 1rem
   }
   .hero {
     margin-bottom: 4.375rem
@@ -2931,7 +2929,7 @@ body {
   }
   .footer__bottom {
     flex-direction: column;
-    gap: .625rem
+    gap: .875rem
   }
   .about-brand__sticker {
     top: initial;
@@ -3163,9 +3161,6 @@ body {
   }
   .footer__round-links {
     gap: .875rem
-  }
-  .footer__resources {
-    gap: .625rem
   }
   .hero {
     margin-bottom: 3.125rem
@@ -4143,16 +4138,6 @@ body {
   @supports not (gap:clamp(0.875rem ,0.75rem + 0.5555555556vw ,1.25rem)) {
     .footer__round-links {
       gap: calc(.875rem + .375 * (100vw - 22.5rem)/ 67.5)
-    }
-  }
-  @supports (gap:clamp(0.625rem ,0.5rem + 0.5555555556vw ,1rem)) {
-    .footer__resources {
-      gap: clamp(.625rem ,.5rem + .5555555556vw ,1rem)
-    }
-  }
-  @supports not (gap:clamp(0.625rem ,0.5rem + 0.5555555556vw ,1rem)) {
-    .footer__resources {
-      gap: calc(.625rem + .375 * (100vw - 22.5rem)/ 67.5)
     }
   }
   @supports (margin-bottom:clamp(3.125rem ,2.7083333333rem + 1.8518518519vw ,4.375rem)) {
